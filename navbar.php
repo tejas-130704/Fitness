@@ -9,15 +9,15 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link nav-tej active" href="loged.php">
+        <a class="nav-link nav-tej" href="index.php">
           Home
         </a>
       </li>
-      <!-- <li class="nav-item ">
-          <a class="nav-link nav-tej" href="#">
+      <li class="nav-item ">
+          <a class="nav-link nav-tej" href="health.html">
             Health Codition
           </a>
-        </li> -->
+        </li>
       <li class="nav-item ">
         <a class="nav-link nav-tej" href="main.php">Nutrition</a>
       </li>
