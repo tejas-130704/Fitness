@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('Pictures/healthbg1.jpg');
+            background-size: cover;
+
+        }
+
+        .container {
+            background: rgb(255,255,255,0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>BMI Calculator</h2>
+        <form id="bmi-form">
+            <div class="form-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required>
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+            </div>
+            <button type="submit">Calculate BMI</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('bmi-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            let height = parseFloat(document.getElementById('height').value) / 100;
+            let weight = parseFloat(document.getElementById('weight').value);
+            let bmi = (weight / (height * height)).toFixed(2);
+
+            let resultText;
+            if (bmi < 18.5) {
+                resultText = 'Your BMI is ' + bmi + '. You are underweight. Consider eating a balanced diet and consulting a healthcare provider.';
+            } else if (bmi >= 18.5 && bmi < 24.9) {
+                resultText = 'Your BMI is ' + bmi + '. You have a normal weight. Keep maintaining a healthy lifestyle!';
+            } else if (bmi >= 25 && bmi < 29.9) {
+                resultText = 'Your BMI is ' + bmi + '. You are overweight. Consider regular physical activity and a balanced diet.';
+            } else {
+                resultText = 'Your BMI is ' + bmi + '. You are obese. It\'s advisable to consult a healthcare provider for personalized advice.';
+            }
+
+            let result = document.getElementById('result');
+            result.textContent = resultText;
+        });
+    </script>
+</body>
+
+</html>

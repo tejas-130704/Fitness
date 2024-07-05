@@ -1,0 +1,221 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #007bff29;
+    background-image: url('images/workbg.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: cursive;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+
+/* Header Styles */
+#head-name {
+    font-family: fantasy;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.head {
+    display: flex;
+    border-bottom: 1px solid rgba(11, 11, 11, 0.33);
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Equipment and Exercises Container Styles */
+.equipment-container, .exercises-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+/* Equipment Styles */
+.equipment {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.equipment.selected {
+    border-color: #007BFF;
+}
+
+.equipment img {
+    width: 110px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* Exercise Card Styles */
+.exercise-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exercise-card .add-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-inline: 10px;
+}
+
+.exercise-card .add-button.added {
+    background-color: #28a745;
+}
+
+/* Logo Styles */
+#img {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-position: center;
+    background-image: url('Pictures/images1.png');
+    background-size: cover;
+}
+
+.logo span {
+    font-family: sans-serif;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-body video {
+    max-width: 60%;
+}
+
+.modal-body .description {
+    margin-left: 20px;
+}
+
+/* Close Button Styles */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover, .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Success Message Styles */
+.success-message {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.material-symbols-outlined {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0; /* Align the dropdown to the right edge */
+    border-radius: 5px;
+    overflow: hidden; /* Ensures the border-radius is visible */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+#profile-icon{
+    color: #007bff;
+    font-size: xx-large;
+}

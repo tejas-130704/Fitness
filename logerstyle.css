@@ -1,0 +1,87 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('Pictures/signbg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main {
+    background-color: #131842;
+    width: 50%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10px;
+    /* flex-wrap: wrap; */
+}
+
+#caromal {
+    width: 50%;
+    background-color: #131842;
+    background-image:url('wal2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-family: Impact;
+
+    color: #fbf6e2;
+    font-size: 30px;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+#data {
+    color: #fbf6e2;
+    width: 50%;
+    background-color: #131842;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label-data {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+.label-data>input {
+    height: 35px;
+    border-radius: 5px;
+    width: 100%;
+    color: #fbf6e2;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px;
+
+}
+
+.error {
+    color: red;
+    text-transform: none;
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.log-btn {
+    height: 35px;
+    color: #fbf6e2;
+    border-radius: 5px;
+    border: 1px;
+    background-color: #088395;
+}
+#sub-btn:hover{
+    background-color: #405D72;
+
+}
