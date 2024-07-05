@@ -29,6 +29,8 @@ Fitness Reclaim is a comprehensive web application designed to assist users in m
   - MySQL
 - **Hosting:**
   - 000webhost
+- **AI Tools:**
+  - Prompt Engineering: Used to generate standard diet plans.
 
 ## Installation
 
