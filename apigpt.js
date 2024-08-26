@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     async function chatWithBruno(message) {
         const url = "https://api.edenai.run/v2/text/chat";
         const headers = {
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiOWRjYWM5MzQtMTBmYi00MDMzLWI2MTgtYzFjNWJmNzFjNDc4IiwidHlwZSI6ImFwaV90b2tlbiJ9.rpDUJ86v1nQeGeANO7Ss28Qhbf0abCJ0kW93xWXpCMk",
+            "Authorization": "GET_YOUR_OWN_API_KEY",
             "Content-Type": "application/json"
         };
         const payload = {
