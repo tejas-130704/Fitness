@@ -1,0 +1,301 @@
+body {
+    width: 99vw;
+    height: 200vh;
+    background-color: black;
+
+}
+
+#bg {
+    width: 99.5vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),  url("..\\Pictures\\bgimg.jpg");
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+}
+
+.navbar {
+    display: flex;
+    align-content: center;
+    padding: 5px;
+    color: white;
+    justify-content: space-between;
+}
+
+.navbar-tej {
+    color: white;
+}
+
+.bg-tej {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+#SignUp>a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.nav-tej {
+    font-size: large;
+    text-decoration: none;
+    color: wheat;
+    margin-inline: 10px;
+    /* display: flex; */
+    display: flex;
+    gap: 5px;
+
+
+}
+
+
+.nav-link {
+    position: relative;
+    transition: all 4s;
+}
+
+.nav-link:hover::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.collapse {
+    justify-content: space-between;
+    padding-inline: 40px;
+}
+
+#mainLogo {
+    height: 70px;
+}
+
+#incident {
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0));
+    width: 100vw;
+    height: 400px;
+    color: white;
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+    padding-top: 10px;
+    z-index: 3;
+}
+
+.incident {
+    height: 100%;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.incident>p {
+
+    overflow: hidden;
+    height: 100px;
+    width:70%;
+}
+
+#startword {
+    color: rgb(255, 51, 0);
+
+}
+
+#trword {
+    background-color: rgb(255, 51, 0);
+    color: wheat;
+}
+
+#fitword,
+#trword,
+#startword,
+.incident>p,
+#tdword>span {
+    padding: 0 10%;
+
+}
+
+#tdword>span {
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(255, 51, 0);
+
+}
+
+.btn-tej {
+    border-color: rgb(255, 51, 0) !important;
+    color: rgb(255, 51, 0) !important;
+    margin: 5px 45px;
+
+}
+
+.btn-tej:hover {
+    background-color: rgb(255, 51, 0) !important;
+    color: white !important;
+}
+
+.incident>p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: smaller;
+}
+
+.slidebar {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    border: 2px solid white;
+    /* display: none; */
+}
+
+.card-deck {
+    position: absolute;
+    top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+    margin-inline: 30px;
+}
+
+.quote {
+    width: 100%;
+    text-align: center;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    /* position: absolute;
+    top: 20%; */
+    justify-content: center;
+    color: white !important;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#h1quote {
+    font-weight: bolder;
+    font-size: 350%;
+    margin-bottom: 20px;
+}
+
+#h2quote {
+    color: rgb(255, 51, 0);
+}
+
+#autotyped {
+    font-size: 170%;
+
+}
+
+.tej-footer {
+    width: 100vw;
+    position: absolute;
+    /* top: 93vh; 
+    bottom: 0px; */
+    left: calc(-50vw + 50%);
+}
+.tej-div{
+    display: flex;
+    gap:15px;
+}
+
+#socialmd {
+    margin-left: 20px;
+    font-size: large;
+}
+
+.tej-flex>i {
+    /* display: flex; */
+    margin-right: 5px;
+}
+
+.tej-size {
+    transform: scale(1.5, 1.5);
+}
+
+.tej-icon {
+    margin: 15px;
+    color: white;
+    width: 30px;
+    transform: scale(1.4,1.4);
+}
+.tej-icon:hover{
+    transform: scale(1.6,1.6);
+}
+
+.personal {
+    width: 100%;
+    height: auto;
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    /* z-index: 2;  */
+
+}
+
+.tej-card {
+    /* border:1px solid rgba(128, 128, 128, 0.808); */
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.808);
+    margin-inline: 30px;
+
+}
+
+#SignUp>a:hover {
+    color: black;
+}
+
+.tracker {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: sandybrown; */
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.808);
+    flex-wrap: wrap;
+    border: 2 ps solid black;
+}
+
+.tej-tr {
+    width: auto;
+    height: auto;
+
+}
+
+.track1>span {
+    font-weight: bolder;
+    box-sizing: content-box;
+    max-height: 20px;
+    text-align: center;
+}
+
+.track1>span>p {
+    display: inline-block;
+    color: rgb(255, 51, 0);
+}
+
+.track1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.tej-icon-dark{
+    margin: 15px;
+    transform: scale(1.5,1.5); 
+}
+.acc-det{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
